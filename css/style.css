@@ -1,0 +1,101 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+/* Start Global Rules */
+:root{
+    
+--Red: hsl(0, 100%, 74%);
+--Green: hsl(154, 59%, 51%);
+--Blue: hsl(248, 32%, 49%);
+--Dark-Blue: hsl(249, 10%, 26%); 
+--Grayish-Blue: hsl(246, 25%, 77%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    background-color: var(--Red) !important;
+}
+.container{
+    max-width: 500px;
+    min-height: 400px;
+    
+}
+/* End Global Rules */
+/* Start Intro Section */
+.intro p{
+    font-size: 15px;
+    font-weight: 500;
+}
+/* End Intro Section */
+/* Start Form Section */
+.form .form-header{
+    background-color: var(--Blue);
+    color: var(--Grayish-Blue);
+    font-size: 12px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 5px 0px;
+}
+.form .form-header span{
+    color: white;
+}
+form{
+    background-color: white;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 5px 0px;
+}
+form input{
+    border: 1px solid hsl(244, 67%, 92%);
+    color: var(--Grayish-Blue);
+}
+form input:focus{
+    outline: none !important;
+    border-color: var(--Blue);
+}
+form .claim{
+    background-color: var(--Green);
+    color: white;
+    font-size: 12px;
+    box-shadow: hsl(153, 56%, 42%) 0px 2px 0px;
+}
+form .claim:hover{
+    background-color: var(--Green);
+    color: white;
+    opacity: 70%;
+    cursor: pointer;
+}
+form p{
+    color: var(--Grayish-Blue);
+    font-size: 10px;
+}
+form p span{
+    color: var(--Red);
+}
+/* End Form Section */
+/* Start Footer */
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+input.error{
+    content: "";
+}
+/* End Footer */
+/* Start Media */
+@media (max-width:676px){
+    body{
+        background-image: url('../images/bg-intro-mobile.png');
+        background-repeat: no-repeat;
+    }
+}
+@media (min-width:677px){
+    body{
+        background-image: url('../images/bg-intro-desktop.png');
+        background-repeat: no-repeat;
+    }
+}
+/* End Media */

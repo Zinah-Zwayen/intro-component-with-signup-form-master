@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Intro component with sign up form</title>
+  <!-- Main Style Sheet -->
+  <link rel="stylesheet" href="css/style.css">
+  <!--Bootstrap File  -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+<main class="container mt-5 p-lg-5 d-flex justify-content-center align-items-center">
+  <div class="row m-1">
+    <!--Strat Intro Section -->
+    <section class="intro text-white mb-4 col-sm-12 col-md-6 col-lg-6 text-center d-flex flex-column justify-content-lg-center align-items-lg-center text-lg-start justify-content-md-center align-items-md-center text-md-center">
+      <h1 class="fw-bold mb-3">Learn to code by watching others</h1>
+      <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+        but understanding how developers think is invaluable. </p>
+    </section>
+    <!-- End Intro Section -->
+    <!-- Start Form Section -->
+    <section class="form col-sm-12 col-md-6 col-lg-6 text-center">
+      <div class="form-header mb-3 p-3 ps-5 pe-5 m-1 rounded fw-semibold"><span class="fw-bold"> Try it free 7 days</span> then $20/mo. thereafter</div>
+      <form action="" class="rounded d-flex flex-column p-2 m-2 needs-validation" novalidate>
+        <div class="col-md-12 col-lg-12  m-1">
+          <input type="text" placeholder="First Name " class="rounded ps-3 p-2 fw-bold w-100 form-control" required>
+          <div class="invalid-feedback text-end">
+            First Name cannot be empty
+          </div>
+        </div>
+        <div class="col-md-12 col-lg-12  m-1">
+          <input type="text" placeholder="Last Name " class="rounded ps-3 p-2 fw-bold w-100 form-control" required>
+          <div class="invalid-feedback text-end">
+            Last Name cannot be empty
+          </div>
+        </div>
+        <div class="col-md-12 col-lg-12  m-1">
+          <input type="email" placeholder="Email Address" class="rounded ps-3 p-2 fw-bold w-100 form-control" required>
+          <div class="invalid-feedback text-end">
+            Looks like this is not an email
+          </div>
+        </div>
+       <div class="col-md-12 col-lg-12  m-1">
+        <input type="password" placeholder="Password" class="rounded ps-3 p-2 fw-bold w-100 form-control" required>
+        <div class="invalid-feedback text-end">
+          Password cannot be empty
+        </div>
+      </div>
+        <div class="col-md-12 col-lg-12 m-1">
+          <button type="submit" class="claim btn p-2 text-uppercase w-100">Claim your free trial</button>
+        </div>
+        
+        <p class="ps-4 pe-4 mt-1"> By clicking the button, you are agreeing to our <span class="fw-bold">Terms and Services</span></p>
+      </form>
+    </section>
+    <!-- End Form Section -->
+  </div>
+</main>  
+  <footer class="mt-3">
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Zinah Zwayen</a>.
+    </p>
+  </footer>
+  <!-- Main JS link -->
+  <script src="js/main.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
